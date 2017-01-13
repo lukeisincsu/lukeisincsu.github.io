@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<title>AirCampus @Columbia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <ul class="w3-navbar w3-white w3-wide w3-padding-8 w3-card-2">
+    <li>
+      <a href="#home" class="w3-margin-left"><b>AirCampus</b>  @Columbia</a>
+    </li>
+    <!-- Float links to the right. Hide them on small screens -->
+    <li class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-left">Introduction</a>
+      <a href="#about" class="w3-left">Broadcast Schdeule</a>
+      <a href="#behost" class="w3-left w3-margin-right">Be a Host</a>
+    </li>
+  </ul>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="columbiaback.png" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span><b></b></span> <span>In lumine Tuo videbimus lumen</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">University Introduction</h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <p>Columbia University (officially Columbia University in the City of New York) is a private Ivy League research university in Upper Manhattan, New York City. It was established in 1754 as King's College by royal charter of George II of Great Britain. Columbia is the oldest college in the state of New York and the fifth chartered institution of higher learning in the country, making it one of nine colonial colleges founded before the Declaration of Independence. After the American Revolutionary War, King's College briefly became a state entity, and was renamed Columbia College in 1784. A 1787 charter placed the institution under a private board of trustees before it was renamed Columbia University in 1896 when the campus was moved from Madison Avenue to its current location in Morningside Heights occupying 32 acres (13 ha) of land. Columbia is one of the fourteen founding members of the Association of American Universities, and was the first school in the United States to grant the M.D. degree.</p>
+
+<p>The university is organized into twenty schools, including Columbia College, the School of Engineering and Applied Science, and the School of General Studies. The university also has global research outposts in Amman, Beijing, Istanbul, Paris, Mumbai, Rio de Janeiro, Santiago, Asunción and Nairobi. It has affiliations with several other institutions nearby, including Teachers College (the university's Department of Education), Barnard College, and Union Theological Seminary, with joint undergraduate programs available through the Jewish Theological Seminary of America, University College London, Sciences Po, City University of Hong Kong,[14] and the Juilliard School.</p>
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">Broadcast Schedule</h3>
+    
+    <a href="tongcheng.html"><p>Jan 17th: Experience Sharing about Courses at IEOR - Mr. Cheng Tong
+    </p></a>
+    <a href="zhangchunlu.html"><p>Jan 18th: Experience Sharing about Admission Application - Ms. Chunlu Zhang
+    </p></a>
+        <a href="xuwei.html"><p>Jan 18th: Experience Sharing about Courses at IEOR - Ms. Wei Xu
+    </p></a>
+            
+            <a href="zhenghuguang.html"><p>Jan 18th: Experience Sharing about Courses at IEOR - Mr. Huguang Zheng
+    </p></a>
+            
+  </div>
+
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="behost">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">Be a Host</h3>
+    <p>Join us and share your amazing experience!</p>
+    <form action="form.asp" target="_blank">
+      <input class="w3-input" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section" type="text" placeholder="Major" required name="Subject">
+      <input class="w3-input w3-section" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-btn w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> Join
+      </button>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Google Map -->
+<div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>AirCampus @Columbia</p>
+</footer>
+
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script>
+<!-- Google Map Location -->
+var myCenter = new google.maps.LatLng(40.8075, -73.9626);
+
+function initialize() {
+var mapProp = {
+  center: myCenter,
+  zoom: 12,
+  scrollwheel: false,
+  draggable: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+</body>
+</html>

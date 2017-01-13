@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<title>AirCampus</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+.w3-sidenav a,.w3-sidenav h4 {font-weight:bold}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidenav/menu -->
+<nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidenav"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="me.png" style="width:45%;"><br><br>
+    <h4 class="w3-padding-0"><b>Luke Zheng</b></h4>
+    <p class="w3-text-grey">Registered user: level 4<br>Points Left: 300</p>
+  </div>
+  <a  onclick="w3_close()" class="w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+  <a onclick="w3_close()" class="w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>MY PAGE</a> 
+  <a  onclick="w3_close()" class="w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+   
+  <div class="w3-section w3-padding-top w3-large">
+    <a href="#" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-facebook-official"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-purple w3-show-inline-block"><i class="fa fa-instagram"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-yellow w3-show-inline-block"><i class="fa fa-snapchat"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-red w3-show-inline-block"><i class="fa fa-pinterest-p"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-light-blue w3-show-inline-block"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-linkedin"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header class="w3-container" id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-opennav w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <h1><b>AirCampus</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Pick a University and See the Broadcast!</span> 
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="ColumbiaUniversity.html">
+      <img src="Columbia.png" alt="Columbia University" style="width:359px;height:220px;"  class="w3-hover-opacity"
+      >
+      </a>
+      <div class="w3-container w3-white">
+        <p><b>Columbia University</b></p>
+        <p>Columbia University is a private Ivy League research university in Upper Manhattan, New York City, established in 1754.
+</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="Harvard.png" alt="Harvard University" style="width:359px;height:220px;" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Harvard University</b></p>
+        <p>Harvard University is a private Ivy League research university in Cambridge, Massachusetts, established in 1636.
+</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="MIT.png" alt="MIT" style="width:359px;height:220px;" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>MIT</b></p>
+        <p>The Massachusetts Institute of Technology (MIT) is a private research university in Cambridge, Massachusetts, founded in 1861.
+</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="Stanford.png" alt="Stanford University" style="width:359px;height:220px;" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Stanford University</b></p>
+        <p>Stanford University is a private research university in Stanford, California, adjacent to Palo Alto and between San Jose and San Francisco, found in 1885.
+</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="Yale.png" alt="Yale University" style="width:359px;height:220px;" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Yale University</b></p>
+        <p>Yale University is an American private Ivy League research university in New Haven, Connecticut, founded in 1701.
+</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="Princeton.png" alt="Princeton" style="width:359px;height:220px;" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Princeton University</b></p>
+        <p>Princeton University is a private Ivy League research university in Princeton, New Jersey, United States, founded in 1746.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <ul class="w3-pagination">
+      <li><a class="w3-black" href="#">1</a></li>
+      <li><a class="w3-hover-black" href="#">2</a></li>
+      <li><a class="w3-hover-black" href="#">3</a></li>
+      <li><a class="w3-hover-black" href="#">4</a></li>
+      <li><a class="w3-hover-black" href="#">»</a></li>
+    </ul>
+  </div>
+
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>About us</b></h4>
+    <p>We are AirCampus, we connect the Chinese students with current students in American Campus, with aim to overcome the
+    information asymmetric and provide services with higher quality</p>
+
+      <div class="w3-row-padding w3-padding-16" id="about">
+          <div >
+            <img src="zhangchunlu.png" alt="Me" style="width:260px;height:240px;">
+
+
+
+            <img src="xuwei.png" alt="Me" style="width:260px;height:240px;">
+
+
+
+            <img src="tongcheng.png" alt="Me" style="width:260px;height:240px;">
+
+
+
+            <img src="me.png" alt="Me" style="width:260px;height:240px;">
+
+        </div>
+    
+  </div>
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Us for Business Partnership</b></h4>
+
+    <hr class="w3-opacity">
+    <form action="form.asp" target="_blank">
+      <div class="w3-group">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-group">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-group">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-btn w3-padding-large w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+<h4 id="contact"><b>Our Partners</b></h4>
+<img src="world.png" width="800" height="600">
+    </div>
+
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">@AirCampus <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity"></a></div>
+
+<!-- End page content -->
+</div>
+
+
+
+<script>
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
